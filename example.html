@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cars = ["HONDA", "BMW", "TOYOTA"];
+        const addCar = newCar => {
+            cars.push(newCar);
+        }
+
+        const displayCars = () => {
+            document.write("Cars: ", cars);
+        }
+
+        // Synchronous
+        // displayCars();
+        // addCar("MERCEDES");
+        // displayCars();
+        // addCar("FORD");
+        // displayCars();
+
+        const addCar_async = () => {
+            setTimeout( () => {
+                cars.push(newCar);
+            }, 2000);
+        }
+        const display_async = () => {
+            setTimeout(() => {
+                document.write("<br>Cars: ", cars);
+            }, 3000);
+        }
+
+        display_async()
+        addCar_async("MERCEDES")
+        display_async()
+        addCar_async("FORD")
+        display_async()
+       
+        // 1. Callback - pass the 2nd function to 1st function
+        // 2. Promise
+        // 3. Promise async wait
+
+    </script> 
+</body>
+</html>
