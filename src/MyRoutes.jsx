@@ -10,6 +10,8 @@ import Homepage from './pages/Homepage'
 import Aboutpage from './pages/Aboutpage'
 import Servicespage from './pages/Servicespage'
 import Contactpage from './pages/Contactpage'
+import Counter from '../hooks/Counter'
+import Classroom from './pages/Classroom'
 
 const MyRoutes = () => {
   return (
@@ -24,8 +26,12 @@ const MyRoutes = () => {
           <Route path= '/about' element={<Aboutpage/>} />
           <Route path= '/services' element={<Servicespage/>} />
           <Route path= '/contact' element={<Contactpage/>} />
+          <Route path= '/counter' element={<Counter/>} />
 
           <Route path ='/second' element= {<Second/>} />
+
+          <Route path ='/classroom' element= {<Classroom/>} />
+
           <Route path= '/revision' element= {<RevisionLayout/>}>
               <Route path ='topic1' element= {<LetConstVar/>} />
               {/* <Route path= 'first' element= {<First/>} /> */}
