@@ -7,5 +7,5 @@ createRoot(document.getElementById('root')).render(
   //renders the page two times by strict mode not used in production
   // <StrictMode>
     <App />
-  // </StrictMode>,
+  //  </StrictMode> 
 )

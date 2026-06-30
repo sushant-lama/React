@@ -12,6 +12,8 @@ import Servicespage from './pages/Servicespage'
 import Contactpage from './pages/Contactpage'
 import Counter from '../hooks/Counter'
 import Classroom from './pages/Classroom'
+import DataFetch from '../hooks/DataFetch'
+import Posts from '../hooks/Posts'
 
 const MyRoutes = () => {
   return (
@@ -31,6 +33,10 @@ const MyRoutes = () => {
           <Route path ='/second' element= {<Second/>} />
 
           <Route path ='/classroom' element= {<Classroom/>} />
+          <Route path ='/posts' element= {<DataFetch/>} />
+
+          {/* dynamic route */}
+          <Route path='/post/:id' element ={<Posts/>}/>
 
           <Route path= '/revision' element= {<RevisionLayout/>}>
               <Route path ='topic1' element= {<LetConstVar/>} />

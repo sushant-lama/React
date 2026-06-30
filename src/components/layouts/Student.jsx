@@ -1,6 +1,10 @@
 import React from 'react'
+//or
+//const Student = ({name= 'n/a', roll = 'n/a', address='n/a'})
 
 const Student = (props) => {
+    //destructuring the object
+    // const {name, roll, address} = props
   return (
     <div className= 'p-10 text-2xl'>
       <h1>
